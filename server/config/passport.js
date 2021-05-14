@@ -18,6 +18,7 @@ const strategy = new JwtStrategy(options, async (payload, done) => {
     // IF user is found
     if (user) return done(null, user);
 
+    // Otherwise return false for user.
     return done(null, false);
   } catch (error) {
     // IF error then return the error and user is false.
