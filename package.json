@@ -1,0 +1,43 @@
+{
+  "name": "Trail-Chasers-React",
+  "version": "1.0.0",
+  "description": "This will be an updated version of Trail Chasers.",
+  "main": "./server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node index.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaaniBravo/Trail-Chasers-React.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TaaniBravo/Trail-Chasers-React/issues"
+  },
+  "homepage": "https://github.com/TaaniBravo/Trail-Chasers-React#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "find-hashtags": "^1.0.1",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.12.9",
+    "mongoose-type-url": "^2.1.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "request": "^2.88.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.1.0",
+    "nodemon": "^2.0.7"
+  }
+}
