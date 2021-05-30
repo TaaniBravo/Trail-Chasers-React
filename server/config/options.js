@@ -5,7 +5,7 @@ const options = {
   secret: process.env.SECRET,
   mailPass: process.env.MAIL,
   user: process.env.USER,
-  mongodb: process.env.MONGODB_URI || "mongodb://localhost/trail-chasers",
+  mongodb: process.env.MONGODB_URI || "mongodb://localhost/dono",
   siteUrl: process.env.SITEURL || "http://localhost:3000/",
   clientId: process.env.CLIENT_ID,
   client: process.env.CLIENT_ID_SECRETE,

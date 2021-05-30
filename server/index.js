@@ -4,7 +4,9 @@ const mongoose = require("mongoose");
 const compression = require("compression");
 const passport = require("./config/passport");
 const PORT = process.env.PORT || 8080;
-const mongoDb = require("./config/options")("mongoDb");
+const mongoDb = require("./config/options")("mongodb");
+
+console.log(mongoDb);
 
 // Create our server
 const app = express();
