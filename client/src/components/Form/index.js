@@ -23,10 +23,11 @@ const Form = () => {
         className="mb-3"
         controlId="BootstrapFormBasicCheckbox"
       >
-        <BootstrapForm.Check type="checkbox" label="Check me out" />
+        {/* Future use add a check box for remembering login. */}
+        {/* <BootstrapForm.Check type="checkbox" label="Check me out" /> */}
       </BootstrapForm.Group>
       <Button variant="primary" type="submit">
-        Submit
+        Create Account
       </Button>
     </BootstrapForm>
   );

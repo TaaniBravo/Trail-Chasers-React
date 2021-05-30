@@ -1,0 +1,38 @@
+// Classes
+
+.App {
+  text-align: center;
+  background: #134e5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #71b280,
+    #134e5e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #71b280,
+    #134e5e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+// Elements
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+// IDs
+
+.form__wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 2em;
+  border-radius: 5px;
+}
