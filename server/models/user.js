@@ -27,6 +27,18 @@ const userSchema = new Schema(
         type: Schema.Types.ObjectId,
         ref: "Favorites"
       }
+    ],
+    following: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "Users"
+      }
+    ],
+    followers: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "Users"
+      }
     ]
   },
   { timestamps: true }
