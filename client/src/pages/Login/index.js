@@ -7,8 +7,8 @@ const Login = () => {
       <h1>Login</h1>
       <Form>
         <Form.Group controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Label>Username/Email</Form.Label>
+          <Form.Control type="text" placeholder="Enter Username/Email" />
         </Form.Group>
 
         <Form.Group controlId="formBasicPassword">
