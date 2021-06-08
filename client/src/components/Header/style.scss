@@ -1,5 +1,12 @@
+// Imports
+@import "../../scss//variables";
+
 header {
   width: 100%;
   padding-inline: 1em;
   background-color: rgba(0, 0, 0, 0);
+}
+
+#navbar__branding {
+  font-family: $trailChasersFont;
 }

@@ -13,7 +13,9 @@ const Header = () => {
   return (
     <header>
       <Navbar expand="lg">
-        <Navbar.Brand href="#">Trail Chasers</Navbar.Brand>
+        <Navbar.Brand id="navbar__branding" href="/home">
+          Trail Chasers
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
