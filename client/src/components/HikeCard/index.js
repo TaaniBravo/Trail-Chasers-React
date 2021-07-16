@@ -1,16 +1,19 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import "./style.scss";
+import { Link } from "react-router-dom";
 
-const HikeCard = props => {
+const HikeCard = hike => {
   return (
     <Card className='hike_card_container'>
-      <Card.Img variant='top' src={props.imgMedium} />
+      <Card.Img variant='top' src={hike.imgMedium} />
       <Card.Body>
-        <Card.Title>{props.name}</Card.Title>
-        <Card.Subtitle>{props.location}</Card.Subtitle>
+        <Card.Title>{hike.name}</Card.Title>
+        <Card.Subtitle>{hike.location}</Card.Subtitle>
         <br />
-        <Button variant='primary'>More Details</Button>
+        <Link to={`/${hike.name}`}>
+          <Button variant='primary'>More Details</Button>
+        </Link>
       </Card.Body>
     </Card>
   );
